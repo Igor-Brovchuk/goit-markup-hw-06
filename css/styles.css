@@ -278,14 +278,14 @@ img {
 }
 
 .features-list {
-  display: flex;
-  padding: 0;
-  gap: 24px;
+  /* display: flex;
+  padding: 96px 0;
+  gap: 72px; */
 }
 
-.feature-item {
+/* .feature-item {
   width: calc((100% - 72px) / 4);
-}
+} */
 
 .icon-container {
   display: flex;
@@ -297,6 +297,9 @@ img {
   height: 112px;
   background: #f4f4fd;
   margin-bottom: 8px;
+}
+
+@media screen and () {
 }
 
 .visually-hidden {
