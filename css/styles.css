@@ -526,31 +526,40 @@ img {
   padding: 96px 0;
 }
 
-@media screen and (min-width: 1158px) {
-  .site-footer {
-    padding: 100px 0;
+@media screen and (max-width: 767px) {
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
-.container-footer {
-  text-align: center;
-}
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container-footer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    margin-left: 108px;
   }
-  .social-title {
-    text-align: left;
+  .footer-form {
+    display: flex;
   }
 }
 
-.logo-text-wrapper {
-  /* text-align: center; */
-  margin-bottom: 72px;
-  width: 264px;
+@media screen and (min-width: 1158px) {
+  .container-footer {
+    display: flex;
+  }
+  .logo-text-wrapper {
+    margin-right: 120px;
+  }
+  .footer-social {
+    margin-right: 80px;
+  }
+  .footer-form {
+    display: flex;
+  }
 }
 
 .logo-footer {
@@ -570,20 +579,20 @@ img {
 }
 
 .footer-text {
-  max-width: 320px;
+  max-width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   text-align: left;
+  margin-bottom: 72px;
 }
 
 .footer-social {
-  text-align: center;
-  justify-content: center;
   width: 208px;
   height: 80px;
+  margin-bottom: 72px;
 }
 
 .social-title {
@@ -597,12 +606,11 @@ img {
 
 .social-icons-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  /* flex-direction: row; */
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
   gap: 16px;
   width: 208px;
-  margin-bottom: 72px;
 }
 
 .footer-icon-link {
@@ -628,7 +636,6 @@ img {
 }
 
 .form-container {
-  /* display: flex; */
   /* margin-left: 80px; */
 }
 
@@ -639,27 +646,21 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-bottom: 16px;
-  text-align: left;
 }
 
 .footer-form {
-  /* display: flex; */
   gap: 24px;
 }
 
 .footer-email {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-bottom: 16px;
-  justify-content: center;
-  align-items: center;
 }
 
 .email-input {
@@ -674,7 +675,8 @@ img {
   height: 40px;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  /* padding-left: 16px; */
+  padding-left: 16px;
+  margin-bottom: 16px;
 }
 
 .email-input::placeholder {
@@ -708,6 +710,8 @@ img {
   justify-content: center;
   margin-left: 16px;
 }
+
+/*-------------------------------------------------------------*/
 
 .modal-overlay {
   background: rgba(46, 47, 66, 0.4);
