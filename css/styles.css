@@ -83,7 +83,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  /* margin-right: 332px; */
 }
 
 @media screen and (max-width: 767px) {
@@ -136,25 +135,9 @@ img {
   }
 }
 
-/* .contacts-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-} */
-
 .logo-part {
   color: #2e2f42;
 }
-
-/* .contacts-link {
-  display: block;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 @media screen and (min-width: 768px) {
   .contacts-link {
@@ -181,6 +164,8 @@ img {
 .contacts-link:focus {
   color: #404bbf;
 }
+
+/* ----------------------------------------------------------- */
 
 .hero {
   width: 100%;
@@ -250,6 +235,8 @@ img {
   background: #404bbf;
 }
 
+/* ----------------------------------------------------------- */
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -260,17 +247,6 @@ img {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
-
-/* .section-title-item {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-transform: capitalize;
-  margin-bottom: 8px;
-  text-align: center;
-} */
 
 .features-title-item {
   font-weight: 700;
@@ -290,16 +266,6 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
-/* .features-list {
-  display: flex;
-  padding: 96px 0;
-  gap: 72px;
-}
-
-.feature-item {
-  width: calc((100% - 72px) / 4);
-} */
 
 .feature-item {
   margin-bottom: 72px;
@@ -369,7 +335,7 @@ img {
   overflow: hidden;
 }
 
-/* ------------------------------------------------- */
+/* ----------------------------------------------------------- */
 
 .team {
   background: #f4f4fd;
@@ -403,8 +369,10 @@ img {
     flex-wrap: wrap;
     row-gap: 64px;
     column-gap: 24px;
-    max-width: calc((264px * 2) + 24px);
     margin: 0 auto;
+  }
+  .team-card {
+    max-width: calc((100% - 24px) / 2);
   }
 }
 
@@ -412,32 +380,20 @@ img {
   .card-list {
     flex-wrap: nowrap;
     gap: 24px;
-    max-width: calc((264px * 4)+ (3 * 24px));
+  }
+  .team-card {
+    max-width: calc((100% - 72px) / 4);
   }
 }
 .team-card {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
-  /* width: calc((100% - 72px) / 4); */
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  padding: ;
 }
-
-/* @media screen and (min-width: 768px) {
-  .team-card {
-    width: calc((100% - 24px) / 2);
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .team__item {
-    width: calc((100%-72px) / 4);
-  }
-} */
 
 .card-content {
-  padding: 32px 0;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -490,18 +446,39 @@ img {
   fill: #f4f4fd;
 }
 
-.portfolio-items-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
-}
+/* ----------------------------------------------------------- */
 
 .portfolio-card {
-  width: calc((100% - 48px) / 3);
+  margin-bottom: 48px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-items-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .portfolio-card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .portfolio-items-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+  .portfolio-card {
+    width: calc((100% - 48px) / 3);
+  }
 }
 
 .portfolio-card:hover {
@@ -523,7 +500,6 @@ img {
   height: 100%;
   background-color: #4d5ae5;
   transform: translateY(100%);
-  /* transition: transform 250ms ease-in-out; */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -543,13 +519,38 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
+/* ----------------------------------------------------------- */
+
 .site-footer {
   background: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .site-footer {
+    padding: 100px 0;
+  }
+}
+
+.container-footer {
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-left: 108px;
+  }
+  .social-title {
+    text-align: left;
+  }
 }
 
 .logo-text-wrapper {
-  margin-right: 120px;
+  /* text-align: center; */
+  margin-bottom: 72px;
+  width: 264px;
 }
 
 .logo-footer {
@@ -569,19 +570,18 @@ img {
 }
 
 .footer-text {
-  max-width: 264px;
+  max-width: 320px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  text-align: left;
 }
 
-.container-footer {
-  display: flex;
-  align-items: baseline;
-}
 .footer-social {
+  text-align: center;
+  justify-content: center;
   width: 208px;
   height: 80px;
 }
@@ -597,11 +597,12 @@ img {
 
 .social-icons-list {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: row; */
   gap: 16px;
   width: 208px;
+  margin-bottom: 72px;
 }
 
 .footer-icon-link {
@@ -627,7 +628,8 @@ img {
 }
 
 .form-container {
-  margin-left: 80px;
+  /* display: flex; */
+  /* margin-left: 80px; */
 }
 
 .subscribe-text {
@@ -637,22 +639,27 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
+  text-align: left;
 }
 
 .footer-form {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
 }
 
 .footer-email {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .email-input {
@@ -667,7 +674,7 @@ img {
   height: 40px;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 .email-input::placeholder {
@@ -692,6 +699,7 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 .subscribe-icon {
