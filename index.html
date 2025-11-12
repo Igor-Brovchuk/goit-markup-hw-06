@@ -74,17 +74,17 @@
               <a class="mobmenu-nav-link" href="">Portfolio</a>
             </li>
             <li class="mobmenu-item">
-              <a class="menu-nav-link" href="">Contacts</a>
+              <a class="mobmenu-nav-link" href="">Contacts</a>
             </li>
           </ul>
           <address class="mobmenu-contacts">
             <ul class="mobmenu-contacts-list">
-              <li>
+              <li class="mobmenu-contact-item">
                 <a class="mobmenu-contacts-link" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
-              <li>
+              <li class="mobmenu-contact-item">
                 <a
                   class="mobmenu-contacts-link"
                   href="mailto:info@devstudio.com"
@@ -93,7 +93,7 @@
               </li>
             </ul>
           </address>
-          <ul class="social-icons-list">
+          <ul class="mobmenu-icons-list">
             <li class="social-icon">
               <a class="footer-icon-link" href="">
                 <svg class="footer-icon" width="40" height="40">
@@ -197,6 +197,7 @@
           <ul class="card-list">
             <li class="team-card">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="photo of Mark Guerrero"
                 width="264"
@@ -239,7 +240,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/tom.jpg" alt="photo of Tom Ford" width="264" />
+              <img
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
+                src="./images/tom.jpg"
+                alt="photo of Tom Ford"
+                width="264"
+              />
               <div class="card-content">
                 <h3 class="team-title-item">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -279,6 +285,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="photo of Camila Garcia"
                 width="264"
@@ -322,6 +329,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="photo of Daniel Wilson"
                 width="264"
@@ -374,6 +382,10 @@
             <li class="portfolio-card">
               <div class="portfolio-image">
                 <img
+                  srcset="
+                    ./images/banking-app.jpg    1x,
+                    ./images/banking-app@2x.jpg 2x
+                  "
                   src="./images/banking-app.jpg"
                   alt="Banking-App"
                   width="360"
@@ -392,6 +404,10 @@
             <li class="portfolio-card">
               <div class="portfolio-image">
                 <img
+                  srcset="
+                    ./images/cashless-payment.jpg    1x,
+                    ./images/cashless-payment@2x.jpg 2x
+                  "
                   src="./images/cashless-payment.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -410,6 +426,10 @@
             <li class="portfolio-card">
               <div class="portfolio-image">
                 <img
+                  srcset="
+                    ./images/meditation-app.jpg    1x,
+                    ./images/meditation-app@2x.jpg 2x
+                  "
                   src="./images/meditation-app.jpg"
                   alt="Meditation App"
                   width="360"
@@ -428,6 +448,10 @@
             <li class="portfolio-card">
               <div class="portfolio-image">
                 <img
+                  srcset="
+                    ./images/taxi-service.jpg    1x,
+                    ./images/taxi-service@2x.jpg 2x
+                  "
                   src="./images/taxi-service.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -446,6 +470,10 @@
             <li class="portfolio-card">
               <div class="portfolio-image">
                 <img
+                  srcset="
+                    ./images/screen-illustrations.jpg    1x,
+                    ./images/screen-illustrations@2x.jpg 2x
+                  "
                   src="./images/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -464,6 +492,10 @@
             <li class="portfolio-card">
               <div class="portfolio-image">
                 <img
+                  srcset="
+                    ./images/online-courses.jpg    1x,
+                    ./images/online-courses@2x.jpg 2x
+                  "
                   src="./images/online-courses.jpg"
                   alt="Online Courses"
                   width="360"
