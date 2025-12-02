@@ -742,6 +742,7 @@ img {
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .modal {
@@ -999,6 +1000,7 @@ img {
 .mobmenu-container.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .mobmenu-wrapper {
